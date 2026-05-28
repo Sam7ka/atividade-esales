@@ -28,8 +28,10 @@ app.get('/inicio', (req, res) => {
 app.get('/usuarios/:id', (req, res) => {
 res.send('usuario: ' +req.params.id);
 });
-
-
+//7
+app.get('/produtos/:nome', (req, res) => {
+res.send(req.params.nome);
+});
 
 
 

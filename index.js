@@ -32,8 +32,10 @@ res.send('usuario: ' +req.params.id);
 app.get('/produtos/:nome', (req, res) => {
 res.send(req.params.nome);
 });
-
-
+//8
+app.get('/filmes/:id/:nome', (req, res) => {
+res.send(req.params.id  + req.params.nome );
+});
 
 
 app.listen(

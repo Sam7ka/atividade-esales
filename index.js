@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
-
+//1
 app.get('/', (req, res) => {
   res.send('Testando o express!');
 });
-
+//2
 app.get('/sobre', (req, res) => {
   res.send('segunda questão questão');
 });
@@ -15,6 +15,10 @@ app.get('/contato', (req, res) => {
     "telefone": "(81) 99999-9999"
     });
   res.send('segunda questão questão');
+});
+//4
+app.get('/erro', (req, res) => {
+  res.status(404).send('Página não encontrada');
 });
 
 app.listen(

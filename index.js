@@ -24,6 +24,12 @@ app.get('/erro', (req, res) => {
 app.get('/inicio', (req, res) => {
   res.redirect('/');
 });
+//6
+app.get('/usuarios/:id', (req, res) => {
+res.send('usuario: ' +req.params.id);
+});
+
+
 
 
 

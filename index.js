@@ -14,12 +14,19 @@ app.get('/contato', (req, res) => {
     "email": "contato@email.com",
     "telefone": "(81) 99999-9999"
     });
-  res.send('segunda questão questão');
+
 });
 //4
 app.get('/erro', (req, res) => {
   res.status(404).send('Página não encontrada');
 });
+//5
+app.get('/inicio', (req, res) => {
+  res.redirect('/');
+});
+
+
+
 
 app.listen(
     3000, 
